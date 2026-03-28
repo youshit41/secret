@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Untuk Kamu ❤️ | Website Bucin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            font-family: 'Segoe UI', 'Poppins', 'Quicksand', system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Container utama */
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 40px;
+            max-width: 550px;
+            width: 100%;
+            padding: 30px 25px 40px;
+            box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            backdrop-filter: blur(2px);
+            transition: 0.3s;
+            animation: fadeInUp 0.8s ease-out;
+            z-index: 10;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .avatar {
+            width: 100px;
+            height: 100px;
+            background: #ffb7b2;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 60px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            25% { transform: scale(1.05); }
+            40% { transform: scale(1); }
+            60% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #c44536;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .sub {
+            color: #e67e6b;
+            font-size: 1rem;
+            margin-bottom: 25px;
+            border-bottom: 2px dashed #ffc8c2;
+            display: inline-block;
+            padding-bottom: 6px;
+        }
+
+        .message {
+            background: #fff5f3;
+            padding: 20px;
+            border-radius: 28px;
+            margin: 20px 0;
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: #5e3a33;
+            text-align: left;
+            border-left: 6px solid #ff8a7a;
+        }
+
+        .love-btn {
+            background: #ff6b6b;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 12px 28px;
+            border-radius: 60px;
+            cursor: pointer;
+            margin: 15px 0 20px;
+            transition: 0.2s;
+            box-shadow: 0 8px 18px rgba(255, 107, 107, 0.4);
+            font-family: inherit;
+        }
+
+        .love-btn:hover {
+            background: #ff5252;
+            transform: scale(1.02);
+            box-shadow: 0 12px 24px rgba(255, 107, 107, 0.5);
+        }
+
+        .gombal-box {
+            background: #ffeae6;
+            border-radius: 30px;
+            padding: 18px;
+            margin-top: 15px;
+            font-style: italic;
+            color: #bc5a48;
+            font-size: 0.95rem;
+            transition: 0.3s;
+            border: 1px solid #ffc5bc;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 0.75rem;
+            color: #b17a6e;
+        }
+
+        /* efek hati berjatuhan */
+        .heart {
+            position: fixed;
+            bottom: 0;
+            font-size: 1.8rem;
+            user-select: none;
+            pointer-events: none;
+            animation: floatUp 6s linear forwards;
+            z-index: 999;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* tombol musik */
+        .music-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: rgba(255,255,240,0.9);
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 26px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.2s;
+        }
+
+        @media (max-width: 550px) {
+            .card {
+                padding: 20px 18px 30px;
+            }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="avatar">
+        💖
+    </div>
+    <h1>Halo, Sayangku !! 💌</h1>
+    <div class="sub"> Nashita Widia Melati</div>
+
+    <div class="message">
+        <strong>✨ Buat Kamu yang Spesial ✨</strong><br><br>
+        Aku cuma mau bilang, setiap hari bersamamu itu kayak <strong>mimpi dan aku ngga pengen bangu.</strong>. <br>
+        Walau kita baru dua kali ketemu tapi gatau kenapa aku kok nyaman sama kamu. <br><br>
+        Kalau kamu baca ini, tolong ingat: <br>
+        <span style="color:#e65844;">❤️ Kamu dicintai, lebih dari yang kamu kira. ❤️</span>
+    </div>
+
+    <button class="love-btn" id="kejutanBtn">✨KLIK, BACA INI YAA NASH! ✨</button>
+
+    <div id="gombalContainer" class="gombal-box">
+        💬 "Aku gak tau apa itu cinta, tapi kalau yang lagi ngeliat ini namanya cinta, aku gamau sembuh."
+    </div>
+    <footer>
+        dibuat dengan sepenuh hati • dari aku buat kamu •
+        YUDHA🌹
+    </footer>
+</div>
+
+<button class="music-toggle" id="musicToggle">🔇</button>
+
+<script>
+    // ------------------- HATI BERJATUHAN -------------------
+    function createHeart() {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.innerHTML = ['❤️', '💖', '💗', '💓', '💕', '🌸', '✨'][Math.floor(Math.random() * 7)];
+        heart.style.left = Math.random() * 100 + '%';
+        heart.style.fontSize = Math.random() * 20 + 20 + 'px';
+        heart.style.animationDuration = Math.random() * 3 + 4 + 's';
+        heart.style.opacity = Math.random() * 0.7 + 0.3;
+        document.body.appendChild(heart);
+        setTimeout(() => {
+            heart.remove();
+        }, 7000);
+    }
+
+    let heartInterval;
+    function startHearts() {
+        if (heartInterval) clearInterval(heartInterval);
+        heartInterval = setInterval(createHeart, 400);
+    }
+    startHearts();
+
+    // ------------------- MUSIK BACKGROUND (menggunakan Web Audio sederhana, karena autoplay diblokir, kita pakai interaksi user dulu) -------------------
+    let audioCtx;
+    let isMusicPlaying = false;
+    let oscillator;
+    let gainNode;
+    let musicAllowed = false;
+
+    // fungsi untuk memainkan melodi sederhana (karena autoplay policy, musik baru jalan setelah klik tombol)
+    function playSimpleMelody() {
+        if (!musicAllowed) return;
+        if (audioCtx && isMusicPlaying) {
+            // matikan
+            if (oscillator) {
+                oscillator.stop();
+                oscillator.disconnect();
+            }
+            isMusicPlaying = false;
+            document.getElementById('musicToggle').innerHTML = '🔇';
+            return;
+        }
+        if (!audioCtx) {
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        if (oscillator) {
+            try { oscillator.stop(); oscillator.disconnect(); } catch(e) {}
+        }
+        gainNode = audioCtx.createGain();
+        gainNode.gain.value = 0.2;
+        gainNode.connect(audioCtx.destination);
+        
+        const now = audioCtx.currentTime;
+        // mainkan not sederhana (C major arpeggio)
+        const notes = [261.63, 329.63, 392.00, 523.25, 392.00, 329.63, 261.63];
+        let time = now;
+        notes.forEach((freq, idx) => {
+            const osc = audioCtx.createOscillator();
+            osc.type = 'sine';
+            osc.frequency.value = freq;
+            const noteGain = audioCtx.createGain();
+            noteGain.gain.value = 0.15;
+            osc.connect(noteGain);
+            noteGain.connect(gainNode);
+            osc.start(time);
+            noteGain.gain.exponentialRampToValueAtTime(0.0001, time + 0.6);
+            osc.stop(time + 0.6);
+            time += 0.45;
+        });
+        
+        // loop sederhana (ulang setiap 4 detik)
+        function scheduleLoop() {
+            if (!isMusicPlaying) return;
+            const nextTime = audioCtx.currentTime + 0.2;
+            let t = nextTime;
+            notes.forEach((freq) => {
+                const osc = audioCtx.createOscillator();
+                osc.type = 'sine';
+                osc.frequency.value = freq;
+                const noteGain = audioCtx.createGain();
+                noteGain.gain.value = 0.12;
+                osc.connect(noteGain);
+                noteGain.connect(gainNode);
+                osc.start(t);
+                noteGain.gain.exponentialRampToValueAtTime(0.0001, t + 0.55);
+                osc.stop(t + 0.55);
+                t += 0.45;
+            });
+            setTimeout(() => {
+                if (isMusicPlaying) scheduleLoop();
+            }, 3800);
+        }
+        
+        isMusicPlaying = true;
+        document.getElementById('musicToggle').innerHTML = '🎵';
+        scheduleLoop();
+    }
+
+    // fungsi untuk mengaktifkan audio (karena user harus interaksi dulu)
+    function enableMusicAndPlay() {
+        if (!musicAllowed) {
+            musicAllowed = true;
+            if (!audioCtx) {
+                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            }
+            // resume context jika suspended
+            if (audioCtx.state === 'suspended') {
+                audioCtx.resume();
+            }
+            playSimpleMelody();
+        } else {
+            playSimpleMelody(); // toggle
+        }
+    }
+
+    document.getElementById('musicToggle').addEventListener('click', () => {
+        enableMusicAndPlay();
+    });
+
+    // ------------------- TOMBOL KEJUTAN (ganti gombal & efek konfeti) -------------------
+    const gombalList = [
+        "💬 \"JAGA KESEHATANN, AKU KHAWATIR.\"",
+        "💬 \"Aku BENERAN KAMU PELET YAA\"",
+        "💬 \"Tadi kamu kirim pap tu jadi mood booster buat aku\"",
+        "💬 \"Aku rela jadi bucin asal bucin sama kamu. Deal?\"",
+        "💬 \"Jangan sering sering OVT YA SAYANGG.\"",
+        "💬 \"I love you.\"",
+        "💬 \"Jangan capek ngeladenin aku yaa.\"",
+        "💬 \"Jangan capek ya jadi orang yang aku sayang seumur hidup.\""
+        
+    ];
+
+    document.getElementById('kejutanBtn').addEventListener('click', () => {
+        // ganti gombal random
+        const randomIndex = Math.floor(Math.random() * gombalList.length);
+        const gombalDiv = document.getElementById('gombalContainer');
+        gombalDiv.innerHTML = gombalList[randomIndex];
+        
+        // efek confetti sederhana (pakai canvas confetti)
+        if (typeof confetti === 'undefined') {
+            // fallback manual buat confetti pake script simple
+            for(let i = 0; i < 40; i++) {
+                const conf = document.createElement('div');
+                conf.innerText = ['❤️','💖','✨','💕','🌸','⭐','💘'][Math.floor(Math.random()*7)];
+                conf.style.position = 'fixed';
+                conf.style.left = Math.random() * window.innerWidth + 'px';
+                conf.style.top = '-20px';
+                conf.style.fontSize = (Math.random() * 20 + 16) + 'px';
+                conf.style.pointerEvents = 'none';
+                conf.style.zIndex = '9999';
+                conf.style.transition = 'transform 1s linear, opacity 1s';
+                document.body.appendChild(conf);
+                setTimeout(() => {
+                    conf.style.transform = `translateY(${window.innerHeight + 50}px) rotate(${Math.random() * 360}deg)`;
+                    conf.style.opacity = '0';
+                }, 10);
+                setTimeout(() => conf.remove(), 1100);
+            }
+        }
+        
+        // animasi tombol
+        const btn = document.getElementById('kejutanBtn');
+        btn.style.transform = 'scale(0.95)';
+        setTimeout(() => { btn.style.transform = ''; }, 150);
+    });
+    
+    // sedikit efek tambahan: judul berubah mengikuti hati
+    let clickCount = 0;
+    document.body.addEventListener('click', (e) => {
+        if(e.target.closest('.music-toggle')) return;
+        // bikin hati kecil di klik
+        const miniHeart = document.createElement('div');
+        miniHeart.innerText = '❤️';
+        miniHeart.style.position = 'fixed';
+        miniHeart.style.left = e.clientX + 'px';
+        miniHeart.style.top = e.clientY + 'px';
+        miniHeart.style.fontSize = '24px';
+        miniHeart.style.pointerEvents = 'none';
+        miniHeart.style.zIndex = '9999';
+        miniHeart.style.opacity = '1';
+        miniHeart.style.transition = 'all 0.8s ease-out';
+        document.body.appendChild(miniHeart);
+        setTimeout(() => {
+            miniHeart.style.transform = 'translateY(-60px) scale(1.5)';
+            miniHeart.style.opacity = '0';
+        }, 20);
+        setTimeout(() => miniHeart.remove(), 800);
+    });
+</script>
+</body>
